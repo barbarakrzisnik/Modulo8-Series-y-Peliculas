@@ -1,0 +1,42 @@
+.navbar {
+  background-color: black;
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    margin: 0px;
+    .navbar-link {
+      color: white;
+      margin-left: 20px;
+    }
+    .icono {
+      font-size: 30px;
+      color: white;
+    }
+    .navbar-busqueda {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      .navbar-input-texto {
+        margin-left: 10px;
+        border: 1px solid #005b96;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+      }
+      .navbar-boton-buscar {
+          background-color: #005b96;
+          padding: 10px;
+          border: none;
+          color: white;
+          margin-left: 10px;
+          border-radius: 5px;
+
+
+
+      }
+    }
+  }
+}
