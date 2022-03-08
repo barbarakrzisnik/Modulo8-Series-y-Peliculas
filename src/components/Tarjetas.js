@@ -1,8 +1,8 @@
-const Tarjetas = (titulo, imagen) => {
+const Tarjetas = ({titulo, imagen, id}) => {
     return (
-        <div>
-            <img src={imagen}></img>
-            <h2>hola</h2>
+        <div key={id}>
+            <img src={imagen}/>
+            <h2>{titulo}</h2>
         </div>
     )
 }
