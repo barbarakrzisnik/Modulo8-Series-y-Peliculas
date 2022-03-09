@@ -19,6 +19,7 @@ const Main = () => {
     )
       .then((res) => res.json())
       .then((data) => setSeries(data.results));
+      console.log(series)
   }, []);
 
 

@@ -7,7 +7,8 @@ const ComponentePreview = ({ array, titulo }) => {
     <div className="contenedor-tarjetas-componente-preview">
     {array.map((elemento) => (
         <Tarjetas
-          titulo={elemento.title}
+          title={elemento.title}
+          name={elemento.name}
           imagen={`https://image.tmdb.org/t/p/w300/${elemento.poster_path}`}
           id={elemento.id}
         />
