@@ -1,9 +1,16 @@
-const Tarjetas = (titulo, imagen) => {
+import { Link } from "react-router-dom"
+
+const Tarjetas = ({title, name, imagen, id}) => {
     return (
-        <div>
-            <img src={imagen}></img>
-            <h2>hola</h2>
+        <Link to={`/pelicula/${id}/:seccion`}>
+        <div key={id} className="tarjeta">
+            <div>
+                <img className="imagen" src={imagen}/>
+            </div>
+            <h2>{title}{name}</h2>
         </div>
+        </Link>
+        
     )
 }
 
