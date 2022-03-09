@@ -1,21 +1,21 @@
-import Tarjetas from "./Tarjetas"
+import Tarjetas from "./Tarjetas";
 
-const ComponentePreview = ({array, titulo}) => {
-    console.log(array)
-    return (
-        <div className="lista-peliculas">
-
+const ComponentePreview = ({ array, titulo }) => {
+  return (
+    <div className="contenedor-componenete-preview">
       <h2>{titulo}</h2>
-
-      {array.map(elemento => (
+    <div className="contenedor-tarjetas-componente-preview">
+    {array.map((elemento) => (
         <Tarjetas
-        titulo={elemento.title}
-        imagen={`https://image.tmdb.org/t/p/w300/${elemento.poster_path}`}
-        key={elemento.id}
-      />
-        ))}
+          titulo={elemento.title}
+          imagen={`https://image.tmdb.org/t/p/w300/${elemento.poster_path}`}
+          id={elemento.id}
+        />
+      ))}
     </div>
-    )
-}
+      
+    </div>
+  );
+};
 
-export default ComponentePreview
+export default ComponentePreview;

@@ -1,7 +1,9 @@
 const Tarjetas = ({titulo, imagen, id}) => {
     return (
-        <div key={id}>
-            <img src={imagen}/>
+        <div className="tarjeta" key={id}>
+            <div>
+                <img className="imagen" src={imagen}/>
+            </div>
             <h2>{titulo}</h2>
         </div>
     )

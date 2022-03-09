@@ -25,8 +25,8 @@ const Main = () => {
 
   return (
     <div>
-      <ComponentePreview array={peliculas} titulo="Peliculas que son tendencia"/>
-      <ComponentePreview array={series} titulo="Series que son tendencia"/>
+      <ComponentePreview array={peliculas.slice(0,5)} titulo="Peliculas que son tendencia"/>
+      <ComponentePreview array={series.slice(0,5)} titulo="Series que son tendencia"/>
     </div>
   );
 };
