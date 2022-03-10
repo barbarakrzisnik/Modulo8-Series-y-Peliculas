@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/pelicula" element={<Pelicula />}></Route>
         <Route path="/tv" element={<Series/>}></Route>
         <Route path="/:categoria/:id/:seccion/:temporada" element={<Detalle/>}></Route>
-        <Route path="/:categoria/:valoracion/pagina/:numeroPagina" element={<Detalle/>}></Route>
+        <Route path="/:categoria/:valoracion/pagina/:numeroPagina" element={<Pelicula/>}></Route>
         <Route path="/busqueda/:inputBusqueda/pagina/:numeroPagina" element={<Busqueda/>}></Route>
         <Route path="*" element={<Error404 />}/>
       </Routes>

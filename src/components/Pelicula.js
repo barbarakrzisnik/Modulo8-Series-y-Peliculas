@@ -1,6 +1,12 @@
+
 const Pelicula = () => {
     return (
-        <h1>Peliculas</h1>
+        <div>
+            <h1>Peliculas</h1>
+
+
+        </div>
+        
     )
 }
 
