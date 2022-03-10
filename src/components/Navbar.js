@@ -24,12 +24,12 @@ const Navbar = () => {
               <FaHome className="icono" />
             </li>
           </Link>
-          <Link className="navbar-link" to="/pelicula/:peliculaId/:seccion">
+          <Link className="navbar-link" to="/pelicula">
             <li>
               <FaVideo className="icono" />
             </li>
           </Link>
-          <Link className="navbar-link" to="/tv/:seriesId/:seccion/:temporada">
+          <Link className="navbar-link" to="/tv">
             <li>
               <FaTv className="icono" />
             </li>

@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
-const Tarjetas = ({title, name, imagen, id}) => {
+const Tarjetas = ({title, name, imagen, id, categoria}) => {
+
     return (
-        <Link to={`/pelicula/${id}/:seccion`}>
+        <Link to={`/${categoria}/${id}/:seccion/:temporada`}>
         <div key={id} className="tarjeta">
             <div>
                 <img className="imagen" src={imagen}/>

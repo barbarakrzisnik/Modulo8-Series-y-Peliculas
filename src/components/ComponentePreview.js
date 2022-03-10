@@ -1,7 +1,9 @@
 import Tarjetas from "./Tarjetas";
 
-const ComponentePreview = ({ array, titulo }) => {
+const ComponentePreview = ({ array, titulo, categoria }) => {
   return (
+
+
     <div className="contenedor-componenete-preview">
       <h2>{titulo}</h2>
     <div className="contenedor-tarjetas-componente-preview">
@@ -11,6 +13,7 @@ const ComponentePreview = ({ array, titulo }) => {
           name={elemento.name}
           imagen={`https://image.tmdb.org/t/p/w300/${elemento.poster_path}`}
           id={elemento.id}
+          categoria={categoria}
         />
       ))}
     </div>
