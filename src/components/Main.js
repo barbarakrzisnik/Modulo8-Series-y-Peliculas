@@ -1,29 +1,11 @@
 import { useState, useEffect } from "react";
 import ComponentePreview from "./ComponentePreview";
+import useFetch from "../hooks/useFetch"
 
 const Main = () => {
-
-  const [peliculas, setPeliculas] = useState([]);
-  const [series, setSeries] = useState([]);
-
-  useEffect(() => {
-    fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=8649accd4d54c4ebc3606e3e22a94d03&language=es-AR&page=1`
-    )
-      .then((res) => res.json())
-      .then((data) => setPeliculas(data.results));
-  }, []);
-
-  useEffect(() => {
-    fetch(
-      `https://api.themoviedb.org/3/tv/popular?api_key=8649accd4d54c4ebc3606e3e22a94d03&language=es-AR&page=1`
-    )
-      .then((res) => res.json())
-      .then((data) => setSeries(data.results));
-  }, []);
-
-
-
+  const peliculas = useFetch("movie", "popular", "data.results")
+  const series = useFetch("tv", "popular", "data.results")
+  
   return (
     <div>
       <ComponentePreview array={peliculas.slice(0,5)} titulo="Peliculas que son tendencia" categoria="movie"/>
