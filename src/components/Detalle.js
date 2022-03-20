@@ -7,7 +7,7 @@ const Detalle = () => {
   const datos = useFetchIndividual(params.categoria, params.id);
   console.log(datos)
 
-  const handleClick = () => {};
+
 
   return (
     <div>
@@ -15,7 +15,6 @@ const Detalle = () => {
       <div>
         <Link
           to={`/${params.categoria}/${params.id}/info/:temporada`}
-          onClick={handleClick}
         >
           INFO
         </Link>
@@ -35,14 +34,12 @@ const Detalle = () => {
               <h2>{datos.name}{datos.title}</h2>
               <h3>{datos.vote_average}</h3>
               <p>{datos.overview}</p>
-              <p>Duracion: {datos.runtime}</p>
-              <p>Genres: {datos.genres.map((elemento) => (
+              {/* <p>Duración: {datos.runtime}</p>
+            {datos.genres.map((elemento) => (
+                  <p>Generos: {elemento.name}</p> ))} */}
+              {/* <p>Producción: {datos.production_companies.map((elemento) => (
                   <p>{elemento.name}</p>
-      ))}</p>
-              <p>Prodution: {datos.production_companies.map((elemento) => (
-                  <p>{elemento.name}</p>
-      ))}</p>
-
+      ))}</p> */}
           </div>
       </div>
     </div>
