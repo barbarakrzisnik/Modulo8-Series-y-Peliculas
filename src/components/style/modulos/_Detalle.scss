@@ -1,0 +1,39 @@
+.contenedor-detalle{
+    background-color: #24272A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header-detalle {
+        width: 100%;
+        height: 500px;
+    }
+
+    .contenedor-links-detalle{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        .link-detalle {
+            margin: 5px;
+            font-size: 30px;
+            font-weight: bolder;
+            color: white;
+            text-decoration: none;
+        }
+        .link-detalle:hover {
+            color: lightblue;
+        }
+    }
+    .contenedor-texto-detalle {
+        width: 50%;
+        display: flex;
+        .texto-detalle-contenedor-array {
+            display: flex;
+            background-color: red;
+            p {
+                display: inline;
+            }
+        }
+    }
+}
