@@ -10,21 +10,7 @@
         height: 500px;
     }
 
-    .contenedor-links-detalle{
-        margin: 20px;
-        display: flex;
-        justify-content: center;
-        .link-detalle {
-            margin: 5px;
-            font-size: 30px;
-            font-weight: bolder;
-            color: white;
-            text-decoration: none;
-        }
-        .link-detalle:hover {
-            color: lightblue;
-        }
-    }
+
     .contenedor-detalle-contenido {
         width: 70%;
         display: flex;
