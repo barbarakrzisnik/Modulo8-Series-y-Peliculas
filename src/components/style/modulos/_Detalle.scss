@@ -25,15 +25,36 @@
             color: lightblue;
         }
     }
-    .contenedor-texto-detalle {
-        width: 50%;
+    .contenedor-detalle-contenido {
+        width: 70%;
         display: flex;
-        .texto-detalle-contenedor-array {
-            display: flex;
-            background-color: red;
-            p {
-                display: inline;
+        margin: 50px;
+        .contenedor-detalle-contenido-texto {
+        margin-left: 20px;
+            .texto-detalle-contenedor-array {
+                display: flex;
+                p {
+                    display: inline;
+                    margin: 2px;
+                }
+            }
+
+        }
+        .contenedor-detalle-contenido-redes {
+            ul {
+                list-style: none;
+                display: flex;
+                padding: 0px;
+                li a {
+                    color: white;
+                    margin: 5px;
+                    font-size: 30px;
+                }
+                li a:hover {
+                    color: lightblue;
+                }
             }
         }
+        
     }
 }
