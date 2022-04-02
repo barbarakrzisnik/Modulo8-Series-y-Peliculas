@@ -1,7 +1,5 @@
-import useFetchEspecifico from "../hooks/useFetchEspecifico";
-import useFetchIndividual from "../hooks/useFetchEspecifico";
+import useFetchEspecificoResults from "../hooks/useFetchEspecificoResults";
 import { useParams, Link } from "react-router-dom";
-import Tarjetas from "./Tarjetas";
 import LinksDetalle from "./LinksDetalle";
 import HeaderDetalle from "./HeaderDetalle";
 
@@ -9,13 +7,13 @@ import HeaderDetalle from "./HeaderDetalle";
 const Video = () => {
 
     const params = useParams();
-    const video = useFetchEspecifico(params.categoria, params.id, "videos");
-    console.log(video)
+    const video = useFetchEspecificoResults(params.categoria, params.id, "videos");
 
     return(
         <div className="video">
             <HeaderDetalle />
             <LinksDetalle />
+            <h4>Video</h4>
         </div>
     )
 }
