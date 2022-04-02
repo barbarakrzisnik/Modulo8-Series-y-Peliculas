@@ -1,5 +1,4 @@
 import useFetchEspecifico from "../hooks/useFetchEspecifico";
-import useFetchIndividual from "../hooks/useFetchEspecifico";
 import { useParams, Link } from "react-router-dom";
 import Tarjetas from "./Tarjetas";
 import LinksDetalle from "./LinksDetalle";

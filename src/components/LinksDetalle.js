@@ -16,12 +16,17 @@ const LinksDetalle = () => {
         >
           REPARTO
         </Link>
-        <Link
+        { params.categoria === "movie" ? (<Link
           className="link-detalle"
           to={`/${params.categoria}/${params.id}/video/:temporada`}
         >
           VIDEO
-        </Link>
+        </Link>) : (<Link
+          className="link-detalle"
+          to={`/${params.categoria}/${params.id}/temporadas/:temporada`}
+        >
+          TEMPORADAS
+        </Link>) }
         <Link
           className="link-detalle"
           to={`/${params.categoria}/${params.id}/similares/:temporada`}
