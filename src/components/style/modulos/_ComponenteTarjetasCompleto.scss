@@ -1,0 +1,17 @@
+@import "../mixins";
+
+
+.contenedor-componente-completo {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 20px;
+    .contenedor-tarjetas-componente-completo {
+        @include centrado($direction: row);
+        flex-wrap: wrap;
+        padding: 20px;
+    
+    }
+
+}
+
