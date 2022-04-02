@@ -8,4 +8,9 @@
        font-size: 20px;
        margin: 20px;
     }
+    .contenedor-episodios {
+        width: 100%;
+        @include centrado($direction: row);
+        flex-wrap: wrap;
+    }
 }
