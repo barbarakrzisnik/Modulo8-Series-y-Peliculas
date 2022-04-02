@@ -1,0 +1,11 @@
+.reparto {
+    background-color: #24272A;
+    @include centrado($direction: column);
+    .contenedor-tarjetas {
+        @include centrado($direction: row);
+        flex-wrap: wrap;
+        width: 80%;
+        
+    }
+
+}

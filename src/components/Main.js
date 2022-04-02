@@ -3,8 +3,8 @@ import ComponentePreview from "./ComponentePreview";
 import useFetch from "../hooks/useFetch"
 
 const Main = () => {
-  const peliculas = useFetch("movie", "popular", "data.results")
-  const series = useFetch("tv", "popular", "data.results")
+  const peliculas = useFetch("movie", "popular")
+  const series = useFetch("tv", "popular")
   
   return (
     <div>

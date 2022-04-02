@@ -1,0 +1,16 @@
+.temporadas {
+    background-color: #24272A;
+    .select-temporadas {
+       background-color: lightblue;
+       border: none;
+       padding: 10px;
+       border-radius: 5px;
+       font-size: 20px;
+       margin: 20px;
+    }
+    .contenedor-episodios {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
