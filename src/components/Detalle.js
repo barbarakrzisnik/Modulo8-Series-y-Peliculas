@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useFetchIndividual from "../hooks/useFetchIndividual";
 import useRedes from "../hooks/useRedes";
-import { FaTwitter, FaFacebookSquare, FaImdb, FaInstagram} from "react-icons/fa";
+import { FaTwitter, FaFacebookSquare, FaImdb, FaInstagram, FaStar} from "react-icons/fa";
 
 const Detalle = () => {
   const params = useParams();
@@ -58,24 +58,32 @@ const Detalle = () => {
           ></img>
         </div>
         <div className="contenedor-detalle-contenido-texto">
-          <h2>
-            {datos.name}
-            {datos.title}
-          </h2>
-          <h3>{datos.vote_average}</h3>
+          <h3>
+            {datos.name ? datos.name : datos.title}
+          </h3>
+          <div className="texto-detalle-contenedor-puntuacion">
+          < FaStar />
+          <h4>{datos.vote_average}</h4>
+          </div>
           <p>{datos.overview}</p>
           <p>Duración: {datos.runtime}</p>
           <div className="texto-detalle-contenedor-array">
-            <p>Generos:</p>
+            <ul>
+            <li>Géneros:</li>
             {datos?.genres?.map((elemento) => (
-              <p>{elemento.name}</p>
+              <li>{elemento.name}</li>
             ))}
+            </ul>
           </div>
+          <p>Estreno: {datos.release_date}</p>
           <div className="texto-detalle-contenedor-array">
-            <p>Produccion:</p>
+            <ul>
+            <li>Produccion:</li>
             {datos?.production_companies?.map((elemento) => (
-              <p>{elemento.name}</p>
+              <li>{elemento.name}</li>
             ))}
+            </ul>
+            
           </div>
           <div className="contenedor-detalle-contenido-redes">
              <ul>
