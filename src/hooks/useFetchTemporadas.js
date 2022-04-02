@@ -8,7 +8,7 @@ const useFetchTemporadas = (categoria, infoFetch, temporada) => {
     fetch(`https://api.themoviedb.org/3/${categoria}/${infoFetch}/season/${temporada}?api_key=8649accd4d54c4ebc3606e3e22a94d03&language=ES&page=1`)
     .then(res=> res.json())
     .then(data => setdatosFetchTemporadas(data))
-  }, [])
+  }, [temporada])
   
   return datosFetchTemporadas
 }

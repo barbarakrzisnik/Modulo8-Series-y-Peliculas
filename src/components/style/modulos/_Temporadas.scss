@@ -10,7 +10,7 @@
     }
     .contenedor-episodios {
         width: 100%;
-        @include centrado($direction: row);
+        display: flex;
         flex-wrap: wrap;
     }
 }
