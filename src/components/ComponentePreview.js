@@ -1,11 +1,16 @@
 import Tarjetas from "./Tarjetas";
+import { useParams, Link } from "react-router-dom";
 
-const ComponentePreview = ({ array, titulo, categoria }) => {
+
+const ComponentePreview = ({ array, titulo, categoria, valoracion }) => {
   return (
 
 
     <div className="contenedor-componenete-preview">
-      <h2>{titulo}</h2>
+       <Link
+          className="link-detalle"
+          to={`/${categoria}/${valoracion}/pagina/:numeroPagina`}
+        >{titulo}</Link>
     <div className="contenedor-tarjetas-componente-preview">
     {array.map((elemento) => (
         <Tarjetas

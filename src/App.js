@@ -10,6 +10,7 @@ import Detalle from "./components/Detalle";
 import Main from "./components/Main";
 import Temporadas from "./components/Temporadas"
 import Error404 from "./components/Error404";
+import ListaCompleta from "./components/ListaCompleta";
 
 import "./App.scss"
 
@@ -27,7 +28,7 @@ const App = () => {
         <Route path="/:categoria/:id/video/:temporada" element={<Video/>}></Route>
         <Route path="/:categoria/:id/temporadas/:temporada" element={<Temporadas/>}></Route>
         <Route path="/:categoria/:id/similares/:temporada" element={<Similares/>}></Route>
-        <Route path="/:categoria/:valoracion/pagina/:numeroPagina" element={<Pelicula/>}></Route>
+        <Route path="/:categoria/:valoracion/pagina/:numeroPagina" element={<ListaCompleta />}></Route>
         <Route path="/busqueda/:inputBusqueda/pagina/:numeroPagina" element={<Busqueda/>}></Route>
         <Route path="*" element={<Error404 />}/>
       </Routes>

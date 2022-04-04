@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import ComponentePreview from "./ComponentePreview";
 import useFetch from "../hooks/useFetch"
 
