@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ComponentePreview from "./ComponentePreview";
 import useFetch from "../hooks/useFetch"
 
+
 const Main = () => {
   const peliculas = useFetch("movie", "popular")
   const series = useFetch("tv", "popular")

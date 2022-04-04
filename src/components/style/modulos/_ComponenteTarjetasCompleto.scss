@@ -2,12 +2,14 @@
 
 
 .contenedor-componente-completo {
-    display: flex;
-    flex-direction: row;
-    
+    width: 100%;
+    background-color: #24272A;
     padding: 20px;
+    h2 {
+        color: white;
+    }
     .contenedor-tarjetas-componente-completo {
-        @include centrado($direction: row);
+        display: flex;
         flex-wrap: wrap;
         padding: 20px;
     
