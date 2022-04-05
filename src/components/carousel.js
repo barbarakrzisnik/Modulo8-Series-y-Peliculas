@@ -13,12 +13,11 @@ const Carousel = ({ array, titulo, categoria, valoracion }) => {
     arrows: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 10,
-    slidesToScroll: 10,
-    className: "carousel",
+    slidesToShow: 5,
+    slidesToScroll: 5,
   };
   return (
-    <div className="container">
+    <div className="carousel">
       <Link
         className="link-detalle"
         to={`/${categoria}/${valoracion}/pagina/:numeroPagina`}
@@ -26,6 +25,7 @@ const Carousel = ({ array, titulo, categoria, valoracion }) => {
         {`${titulo}`}
         <FaArrowRight className="icono" />
       </Link>
+      <div className="contenedor-carousel">
       <Slider {...settings}>
           {array.map((elemento) => (
             <Tarjetas
@@ -38,6 +38,9 @@ const Carousel = ({ array, titulo, categoria, valoracion }) => {
             />
           ))}
       </Slider>
+
+      </div>
+    
     </div>
   );
 };

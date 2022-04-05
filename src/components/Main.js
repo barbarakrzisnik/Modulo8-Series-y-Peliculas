@@ -9,9 +9,8 @@ const Main = () => {
   
   return (
     <div className="main">
-      <Carousel array={peliculas.slice(0,10)} titulo="Peliculas que son tendencia" categoria="movie" valoracion="popular" />
-      <ComponentePreview array={peliculas.slice(0,5)} titulo="Peliculas que son tendencia" categoria="movie" valoracion="popular"/>
-      <ComponentePreview array={series.slice(0,5)} titulo="Series que son tendencia" categoria="tv" valoracion="popular"/>
+      <Carousel array={peliculas} titulo="Peliculas que son tendencia" categoria="movie" valoracion="popular" />
+      <Carousel array={series} titulo="Series que son tendencia" categoria="movie" valoracion="popular" />
     </div>
   );
 };
