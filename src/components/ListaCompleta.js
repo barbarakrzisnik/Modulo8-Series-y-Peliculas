@@ -12,7 +12,7 @@ const ListaCompleta = () => {
 
     return (
         <div className="seccion-lista-completa">
-            <ComponenteTarjetasCompleto array={array} />
+            <ComponenteTarjetasCompleto array={array} categoria={params.categoria} />
 
         </div>
         
