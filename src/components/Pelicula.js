@@ -1,6 +1,5 @@
 import ComponentePreview from "./ComponentePreview";
 import useFetch from "../hooks/useFetch"
-import { useParams, Link } from "react-router-dom";
 
 const Pelicula = () => {
     const peliculasPopulares = useFetch("movie", "popular")
