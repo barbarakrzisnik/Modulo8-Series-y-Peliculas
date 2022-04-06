@@ -1,0 +1,16 @@
+.seccion-lista-completa {
+    .paginado{
+        background-color: #24272A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        button{
+            background-color: lightblue;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+    }
+}
