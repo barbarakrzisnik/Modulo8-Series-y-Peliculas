@@ -2,6 +2,7 @@ import useFetchEspecificoResults from "../hooks/useFetchEspecificoResults";
 import { useParams, Link } from "react-router-dom";
 import LinksDetalle from "./LinksDetalle";
 import HeaderDetalle from "./HeaderDetalle";
+import Imagen from "./construccion.svg";
 
 
 const Video = () => {
@@ -13,7 +14,11 @@ const Video = () => {
         <div className="video">
             <HeaderDetalle />
             <LinksDetalle />
-            <h4>Video</h4>
+            <div className="imagen">
+            <img src={Imagen}></img>
+            <h3>Pronto disponible!</h3>
+            </div>
+            
         </div>
     )
 }

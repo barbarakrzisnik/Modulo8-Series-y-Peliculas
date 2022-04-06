@@ -1,7 +1,15 @@
-const Error404 = () => {
-    return (
-        <h1>Error 404</h1>
-    )
-}
+import imagen from "./404.svg";
 
-export default Error404
+const Error404 = () => {
+  return (
+    <div className="error404">
+        
+      <div className="imagen">
+        <img src={imagen}></img>
+      </div>
+      <h3>Ups! No pudimos encontrar la página</h3>
+    </div>
+  );
+};
+
+export default Error404;
