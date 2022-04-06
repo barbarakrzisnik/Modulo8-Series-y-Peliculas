@@ -1,0 +1,22 @@
+.footer {
+    background-color: #24272A;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        color: white;
+        margin: 0%;
+    }
+    div {
+        margin-top: 10px;
+       a{
+           margin-left: 10px;
+           color: lightblue;
+           font-size: 20px;
+       }
+       a:hover {
+           color: white
+       }
+    }
+}
