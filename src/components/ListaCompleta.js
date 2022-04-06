@@ -4,6 +4,7 @@ import useFetch from "../hooks/useFetch";
 import { useState } from "react";
 import { tituloListaCompleta } from "../auxiliares/funciones";
 
+
 const ListaCompleta = () => {
   const params = useParams();
   const [pagina, setPagina] = useState(1);

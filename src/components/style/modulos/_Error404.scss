@@ -1,0 +1,23 @@
+.error404 {
+    background-color: #24272A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .imagen {
+        background-color: white;
+        width: 20%;
+        padding: 20px;
+        border-radius: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    h3 {
+        color: white;
+        margin-top: 10px;
+        font-size: 30px;
+
+    }
+}
