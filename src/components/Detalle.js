@@ -9,15 +9,11 @@ import {
   FaStar,
 } from "react-icons/fa";
 import LinksDetalle from "./LinksDetalle";
-import Rating from "@mui/material/Rating";
 
 const Detalle = () => {
   const params = useParams();
   const datos = useFetchIndividual(params.categoria, params.id);
   const redes = useFetchEspecifico(params.categoria, params.id, "external_ids");
-
-
-
 
   return (
     <div className="contenedor-detalle">
@@ -43,8 +39,7 @@ const Detalle = () => {
         <div className="contenedor-detalle-contenido-texto">
           <h3>{datos.name ? datos.name : datos.title}</h3>
           <div className="texto-detalle-contenedor-puntuacion">
-            < FaStar />
-          {/* <Rating name="read-only" value={datos.vote_average} readOnly /> */}
+            <FaStar />
             <h4>{datos.vote_average}</h4>
           </div>
           <p>{datos.overview}</p>

@@ -1,21 +1,37 @@
-import ComponenteTarjetasCompleto from "./ComponenteTarjetasCompleto"
-import { useParams } from "react-router-dom"
-import useFetch from "../hooks/useFetch"
-
+import ComponenteTarjetasCompleto from "./ComponenteTarjetasCompleto";
+import { useParams } from "react-router-dom";
+import useFetch from "../hooks/useFetch";
+import { useState } from "react";
 
 const ListaCompleta = () => {
-    const params = useParams()
+  const params = useParams();
+  const [pagina, setPagina] = useState(1);
+  const array = useFetch(
+    `${params.categoria}`,
+    `${params.valoracion}`,
+    `${pagina}`
+  );
 
-    const array = useFetch(`${params.categoria}`, `${params.valoracion}`)
+  const handleChangePrev = () => {
+    setPagina(pagina - 1);
+  };
 
+  const handleChangeNext = () => {
+    setPagina(pagina + 1);
+  };
 
-    return (
-        <div className="seccion-lista-completa">
-            <ComponenteTarjetasCompleto array={array} categoria={params.categoria} />
+  return (
+    <div className="seccion-lista-completa">
+      <ComponenteTarjetasCompleto array={array} categoria={params.categoria} />
+      <div className="paginado">
+        <button onClick={handleChangePrev} disabled={pagina === 1}>
+          Prev
+        </button>
+        <p>Página {pagina}</p>
+        <button onClick={handleChangeNext}>Next</button>
+      </div>
+    </div>
+  );
+};
 
-        </div>
-        
-    )
-}
-
-export default ListaCompleta
+export default ListaCompleta;

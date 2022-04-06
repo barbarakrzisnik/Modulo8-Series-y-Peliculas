@@ -5,7 +5,6 @@ const Series = () => {
     const seriesPopulares = useFetch("tv", "popular")
     const seriesMejoresCriticas = useFetch("tv", "top_rated")
     const seriesAlAire = useFetch("tv", "airing_today")
-    console.log(seriesAlAire)
 
     return (
         <div>
