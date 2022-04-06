@@ -8,7 +8,7 @@ const Tarjetas = ({title, name, imagen, id, categoria}) => {
             <div>
                 <img className="imagen" src={imagen}/>
             </div>
-            <h2>{title ? title : name}</h2>
+            <h3>{title ? title : name}</h3>
         </div>
         </Link>
         

@@ -8,7 +8,7 @@ const Pelicula = () => {
     const peliculasCine = useFetch("movie", "now_playing")
 
     return (
-        <div>
+        <div const="peliculas">
             <ComponentePreview array={peliculasPopulares.slice(0,5)} titulo="Peliculas Populares" categoria="movie" valoracion="popular" />
             <ComponentePreview array={peliculasMejoresCriticas.slice(0,5)} titulo="Peliculas con mejores criticas" categoria="movie" valoracion="top_rated"/>
             <ComponentePreview array={peliculasEstrenar.slice(0,5)} titulo="Peliculas a estrenar" categoria="movie" valoracion="upcoming"/>

@@ -12,7 +12,7 @@ const Busqueda = () => {
   return (
     <div className="busqueda">
       <h2>Resultados para {params.inputBusqueda}</h2>
-      <ComponenteTarjetasCompleto array={busqueda}/>
+      <ComponenteTarjetasCompleto array={busqueda} categoria={"tv"}/>
     </div>
   );
 };

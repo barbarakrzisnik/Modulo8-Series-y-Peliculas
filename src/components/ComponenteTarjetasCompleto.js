@@ -11,7 +11,7 @@ const ComponenteTarjetasCompleto = ({ array, categoria }) => {
           name={elemento.name}
           imagen={`https://image.tmdb.org/t/p/w300/${elemento.poster_path}`}
           id={elemento.id}
-          categoria={categoria}
+          categoria={categoria || elemento.media_type}
         />
       ))}
     </div>

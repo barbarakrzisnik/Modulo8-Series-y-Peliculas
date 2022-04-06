@@ -1,6 +1,6 @@
 .tarjeta {
-    width: 90%;
-    margin: 10px; 
+    width: 80%;
+    margin: 5px; 
     padding: 5px;
     color: white;
     font-size: 12px;
@@ -8,6 +8,9 @@
         width: 100%;
         overflow: hidden;
         transition: 0.3s;
+    }
+    h3 {
+        font-size: 20px;
     }
 }
 

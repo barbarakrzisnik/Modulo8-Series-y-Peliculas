@@ -4,13 +4,13 @@
 .contenedor-componenete-preview {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     width: 100%;
     background-color: #24272A;
     .link-detalle {
         color: white;
         text-decoration: none;
         font-size: 25px;
+        margin: 10px;
         .icono {
             color: lightblue;
             margin-left: 10px;
@@ -18,8 +18,7 @@
     }
     .contenedor-tarjetas-componente-preview {
         @include centrado($direction: row);
-        padding: 20px;
-        width: 80%;
+        width: 100%;
     
     }
 }
