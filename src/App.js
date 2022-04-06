@@ -11,6 +11,7 @@ import Main from "./components/Main";
 import Temporadas from "./components/Temporadas"
 import Error404 from "./components/Error404";
 import ListaCompleta from "./components/ListaCompleta";
+import Footer from "./components/Footer"
 
 import "./App.scss"
 
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/busqueda/:inputBusqueda/pagina/:numeroPagina" element={<Busqueda/>}></Route>
         <Route path="*" element={<Error404 />}/>
       </Routes>
+    <Footer/>
     </BrowserRouter>
     </div>
   );
