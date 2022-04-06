@@ -9,7 +9,6 @@ const ListaCompleta = () => {
     const array = useFetch(`${params.categoria}`, `${params.valoracion}`)
 
 
-
     return (
         <div className="seccion-lista-completa">
             <ComponenteTarjetasCompleto array={array} categoria={params.categoria} />

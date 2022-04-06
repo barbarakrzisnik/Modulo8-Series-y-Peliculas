@@ -7,7 +7,6 @@ import ComponenteTarjetasCompleto from "./ComponenteTarjetasCompleto"
 const Busqueda = () => {
   const params = useParams();
   const busqueda = useFetchBusqueda(params.inputBusqueda)
-  console.log(busqueda)
 
   return (
     <div className="busqueda">
