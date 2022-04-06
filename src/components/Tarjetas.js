@@ -3,12 +3,12 @@ import { Link, useParams } from "react-router-dom"
 const Tarjetas = ({title, name, imagen, id, categoria}) => {
 
     return (
-        <Link to={`/${categoria}/${id}/info/:temporada`}>
+        <Link className="link-tarjeta" to={`/${categoria}/${id}/info/:temporada`}>
         <div key={id} className="tarjeta">
             <div>
                 <img className="imagen" src={imagen}/>
             </div>
-            <h2>{title ? title : name}</h2>
+            <h3>{title ? title : name}</h3>
         </div>
         </Link>
         
