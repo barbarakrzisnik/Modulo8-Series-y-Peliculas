@@ -1,6 +1,12 @@
 .seccion-lista-completa {
+    background-color: #24272A;
+    h2 {
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+        font-weight: 400;
+    }
     .paginado{
-        background-color: #24272A;
         display: flex;
         justify-content: center;
         align-items: center;
