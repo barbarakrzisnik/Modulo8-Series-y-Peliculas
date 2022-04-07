@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import useFetchIndividual from "../hooks/useFetchIndividual";
 import Tarjetas from "./Tarjetas";
 import {Link} from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";

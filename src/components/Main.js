@@ -1,4 +1,3 @@
-import ComponentePreview from "./ComponentePreview";
 import useFetch from "../hooks/useFetch"
 import Carousel from "./Carousel";
 
