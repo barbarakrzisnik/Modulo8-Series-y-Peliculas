@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import useFetchIndividual from "../hooks/useFetchIndividual";
 import useFetchEspecifico from "../hooks/useFetchEspecifico";
 import {

@@ -13,3 +13,12 @@
         color: lightblue;
     }
 }
+
+
+@media (max-width: 800px) {
+    .contenedor-links-detalle {
+        .link-detalle {
+            font-size: 15px;
+        }
+    }
+}

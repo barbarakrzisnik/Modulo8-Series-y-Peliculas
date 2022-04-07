@@ -18,35 +18,49 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <nav>
-        <ul>
-          <Link className="navbar-link" to="/">
-            <li>
-              <FaHome className="icono" />
+        <ul >
+          <div className="responsive-navbar">
+            <Link className="navbar-link" to="/">
+              <li>
+                <FaHome className="icono" />
+              </li>
+            </Link>
+            <Link className="navbar-link" to="/pelicula">
+              <li>
+                <FaVideo className="icono" />
+              </li>
+            </Link>
+            <Link className="navbar-link" to="/tv">
+              <li>
+                <FaTv className="icono" />
+              </li>
+            </Link>
+          </div>
+
+          <div className="responsive-navbar">
+            <li className="navbar-busqueda">
+              <FaSearch className="icono" />
+              <form onSubmit={handleSubmit}>
+                <div>
+                  <label>
+                    <input
+                      className="navbar-input-texto"
+                      type="text"
+                      placeholder="Buscar"
+                      onChange={handleChange}
+                    ></input>
+                  </label>
+                  <label>
+                    <input
+                      className="navbar-boton-buscar"
+                      type="submit"
+                      value="Buscar"
+                    ></input>
+                  </label>
+                </div>
+              </form>
             </li>
-          </Link>
-          <Link className="navbar-link" to="/pelicula">
-            <li>
-              <FaVideo className="icono" />
-            </li>
-          </Link>
-          <Link className="navbar-link" to="/tv">
-            <li>
-              <FaTv className="icono" />
-            </li>
-          </Link>
-          <li className="navbar-busqueda">
-            <FaSearch className="icono" />
-            <form onSubmit={handleSubmit}>
-              <div>
-                <label>
-                <input className="navbar-input-texto" type="text" placeholder="Buscar" onChange={handleChange}></input>
-                </label>
-                <label>
-                <input className="navbar-boton-buscar" type="submit" value="Buscar"></input>
-                </label>
-              </div>
-            </form>
-          </li>
+          </div>
         </ul>
       </nav>
     </div>
