@@ -9,7 +9,7 @@ const useFetchEspecifico = (categoria, infoFetch, seccion) => {
       fetch(`${url}${categoria}/${infoFetch}/${seccion}?${apiKey}&language=es-AR&page=1`)
       .then(res=> res.json())
       .then(data => setdatosFetchEspecifico(data))
-    }, [])
+    })
     
     return datosFetchEspecifico
   }

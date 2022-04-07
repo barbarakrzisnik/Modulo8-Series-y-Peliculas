@@ -1,10 +1,6 @@
 import Tarjetas from "./Tarjetas";
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const ComponentePreview = ({ array, titulo, categoria, valoracion }) => {
 
