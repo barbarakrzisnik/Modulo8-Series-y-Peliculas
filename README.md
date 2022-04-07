@@ -1,6 +1,6 @@
-# BUSCADOR DE TRAGOS
+# SERIES Y PELICULAS
 
-<img src="./img/Asset 4.png">  
+<img src="./img/Asset 7.png">  
   
 
 Hola! Este es el proyecto final de mi camino de formación como desarrolladora Front End en ADA ITW.
@@ -20,7 +20,8 @@ ___
 
 👩‍💻 Este proyecto fue construido con las siguientes tecnologías:  
 
-<img src="./src/Asset 9.png"> <img src="./src/Asset 2.png">  <img src="./src/Asset 3.png">  <img src="./src/Asset 8.png">   
+<img src="./src/Asset 9.png"> <img src="./src/Asset 2.png">  <img src="./src/Asset 3.png"> <img src="./src/Asset 8.png">  <img src="./src/Asset 1.png"> 
 
   
-<img src="./src/Asset 1.png">
+<img src="./src/Asset 4.png">
+
