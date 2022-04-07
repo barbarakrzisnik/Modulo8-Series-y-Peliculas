@@ -38,8 +38,12 @@ const Navbar = () => {
             <FaSearch className="icono" />
             <form onSubmit={handleSubmit}>
               <div>
+                <label>
                 <input className="navbar-input-texto" type="text" placeholder="Buscar" onChange={handleChange}></input>
+                </label>
+                <label>
                 <input className="navbar-boton-buscar" type="submit" value="Buscar"></input>
+                </label>
               </div>
             </form>
           </li>

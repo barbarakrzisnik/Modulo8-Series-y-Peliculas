@@ -9,7 +9,7 @@ const TarjetaEpisodio = ({
   return (
     <div key={id} className="tarjeta-episodio">
       <div>
-        <img className="imagen-tarjeta-episodio" src={imagen} />
+        <img className="imagen-tarjeta-episodio" src={imagen} alt="Captura de episodio"/>
       </div>
       <div className="contenedor-titulo-tarjeta-episodio">
         <h3 className="numero-tarjeta-episodio">
