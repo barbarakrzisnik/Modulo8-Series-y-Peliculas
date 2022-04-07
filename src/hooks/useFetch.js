@@ -11,7 +11,6 @@ const useFetch = (categoria, infoFetch, pagina) => {
     .then(res=> res.json())
     .then(data => {
       setDatosFetch(data.results);
-      setTotalPages(data.total_pages)
     })
   }, [pagina])
   
