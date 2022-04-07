@@ -5,7 +5,7 @@ const Error404 = () => {
     <div className="error404">
         
       <div className="imagen">
-        <img src={imagen}></img>
+        <img src={imagen} alt="Sitio no encontrado"></img>
       </div>
       <h3>Ups! No pudimos encontrar la página</h3>
     </div>

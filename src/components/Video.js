@@ -15,7 +15,7 @@ const Video = () => {
             <HeaderDetalle />
             <LinksDetalle />
             <div className="imagen">
-            <img src={Imagen}></img>
+            <img src={Imagen} alt="Sitio en construccion"></img>
             <h3>Pronto disponible!</h3>
             </div>
             
