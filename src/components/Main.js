@@ -1,5 +1,5 @@
 import useFetch from "../hooks/useFetch"
-import Carousel from "./Carousel";
+import Carousel from "./carousel";
 
 
 const Main = () => {
