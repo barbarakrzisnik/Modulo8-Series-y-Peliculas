@@ -9,7 +9,7 @@ const useFetchIndividual = (categoria, infoFetch) => {
     fetch(`${url}${categoria}/${infoFetch}?${apiKey}&language=ES&page=1`)
     .then(res=> res.json())
     .then(data => setdatosFetchIndividual(data))
-  }, [])
+  })
   
   return datosFetchIndividual
 }

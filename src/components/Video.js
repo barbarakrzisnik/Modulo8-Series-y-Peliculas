@@ -8,7 +8,6 @@ import Imagen from "./construccion.svg";
 const Video = () => {
 
     const params = useParams();
-    const video = useFetchEspecificoResults(params.categoria, params.id, "videos");
 
     return(
         <div className="video">

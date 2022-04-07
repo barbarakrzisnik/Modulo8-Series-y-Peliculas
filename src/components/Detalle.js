@@ -33,7 +33,7 @@ const Detalle = () => {
       <div className="contenedor-detalle-contenido">
         <div>
           <img
-            src={`https://image.tmdb.org/t/p/w300/${datos.poster_path}`}
+            src={`https://image.tmdb.org/t/p/w300/${datos.poster_path}`}  alt="Poster"
           ></img>
         </div>
         <div className="contenedor-detalle-contenido-texto">

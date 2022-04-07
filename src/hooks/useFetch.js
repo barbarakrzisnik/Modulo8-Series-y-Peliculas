@@ -4,7 +4,6 @@ import { apiKey, url } from "../auxiliares/variables";
 
 const useFetch = (categoria, infoFetch, pagina) => {
   const [datosFetch, setDatosFetch] = useState([])
-  const [totalPages, setTotalPages] = useState([])
 
 
   useEffect(() => {
