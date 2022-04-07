@@ -1,14 +1,9 @@
-import useFetchEspecificoResults from "../hooks/useFetchEspecificoResults";
-import { useParams } from "react-router-dom";
 import LinksDetalle from "./LinksDetalle";
 import HeaderDetalle from "./HeaderDetalle";
 import Imagen from "./construccion.svg";
 
 
 const Video = () => {
-
-    const params = useParams();
-
     return(
         <div className="video">
             <HeaderDetalle />
