@@ -3,7 +3,7 @@ import useFetchIndividual from "../hooks/useFetchIndividual";
 import LinksDetalle from "./LinksDetalle";
 import HeaderDetalle from "./HeaderDetalle";
 import TarjetaEpisodio from "./TarjetaEpisodio";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { selectTemporadas } from "../auxiliares/funciones";
 import { useState } from "react";
 

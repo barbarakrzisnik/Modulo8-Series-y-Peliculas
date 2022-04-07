@@ -7,14 +7,19 @@
     padding: 10px;
     list-style: none;
     margin: 0px;
-    .navbar-link {
-      color: white;
-      margin-left: 20px;
+    .responsive-navbar{
+      display: flex;
+      .navbar-link {
+        color: white;
+        margin-left: 20px;
+      }
+      .icono {
+        font-size: 30px;
+        color: white;
+      }
+
     }
-    .icono {
-      font-size: 30px;
-      color: white;
-    }
+    
     .navbar-busqueda {
       display: flex;
       align-items: center;
@@ -36,6 +41,28 @@
 
 
 
+      }
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .navbar{
+    ul {
+      flex-direction: column;
+      align-items: center;
+      .responsive-navbar{
+        .icono {
+          font-size: 20px;
+        }
+
+      }
+      .navbar-busqueda{
+       justify-content: end;
+        .navbar-input-texto{
+          font-size: 10px;
+        }
       }
     }
   }
