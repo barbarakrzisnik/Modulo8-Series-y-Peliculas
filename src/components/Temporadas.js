@@ -18,7 +18,6 @@ const Temporadas = () => {
   const numeroTemporadas = useFetchIndividual(params.categoria, params.id);
   const episodios = temporadas.episodes;
 
-  console.log(temporadas);
 
   const handleChange = (e) => {
     setTemporadaSeleccionada(e.target.value);

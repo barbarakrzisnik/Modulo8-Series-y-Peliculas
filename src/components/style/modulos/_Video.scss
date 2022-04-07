@@ -5,14 +5,14 @@
     background-color: #24272A;
     .imagen {
         width: 30%;
-        margin: 40px;
+        margin: 30px;
         @include centrado($direction: column);
         img {
             width: 100%;
         }
         h3{
             color: white;
-            margin: 40px;
+            margin: 20px;
         }
 
     }
