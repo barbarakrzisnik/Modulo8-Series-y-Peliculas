@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <div className="main">
       <Carousel array={peliculas} titulo="Peliculas que son tendencia" categoria="movie" valoracion="popular" />
-      <Carousel array={series} titulo="Series que son tendencia" categoria="movie" valoracion="popular" />
+      <Carousel array={series} titulo="Series que son tendencia" categoria="tv" valoracion="popular" />
     </div>
   );
 };
