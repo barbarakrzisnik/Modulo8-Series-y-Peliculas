@@ -9,7 +9,7 @@ const useFetchTemporadas = (categoria, infoFetch, temporada) => {
     fetch(`${url}${categoria}/${infoFetch}/season/${temporada}?${apiKey}&language=ES&page=1`)
     .then(res=> res.json())
     .then(data => setdatosFetchTemporadas(data))
-  }, [temporada])
+  }, [categoria, infoFetch, temporada])
   
   return datosFetchTemporadas
 }

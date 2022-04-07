@@ -12,7 +12,7 @@ const useFetch = (categoria, infoFetch, pagina) => {
     .then(data => {
       setDatosFetch(data.results);
     })
-  }, [pagina])
+  }, [pagina, categoria, infoFetch ])
   
   return datosFetch
 }
