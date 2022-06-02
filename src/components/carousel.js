@@ -5,6 +5,7 @@ import Tarjetas from "./Tarjetas";
 import {Link} from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
+// Si todos los nombres de tus archivos estan con mayuscula, este deberia estarlo tambien
 const Carousel = ({ array, titulo, categoria, valoracion }) => {
 
   const settings = {
@@ -48,6 +49,7 @@ const Carousel = ({ array, titulo, categoria, valoracion }) => {
         <FaArrowRight className="icono" />
       </Link>
       <div className="contenedor-carousel">
+        {/* slider deberia estar adentro de este div en relacion al tabulado, no a la misma altura */}
       <Slider {...settings}>
           {array.map((elemento) => (
             <Tarjetas
@@ -59,6 +61,8 @@ const Carousel = ({ array, titulo, categoria, valoracion }) => {
               categoria={categoria}
             />
           ))}
+
+          {/* ojo con la prolijidad de tu tabulado: slider esta antes que el div de cierre */}
       </Slider>
 
       </div>

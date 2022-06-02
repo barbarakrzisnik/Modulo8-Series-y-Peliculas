@@ -9,6 +9,7 @@ const ListaCompleta = () => {
   const params = useParams();
   const [pagina, setPagina] = useState(1);
   const array = useFetch(
+    // por que convertis estos valores a string? 
     `${params.categoria}`,
     `${params.valoracion}`,
     `${pagina}`

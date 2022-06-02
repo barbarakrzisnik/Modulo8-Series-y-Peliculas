@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 const Tarjetas = ({title, name, imagen, id, categoria}) => {
 
     return (
+        // :temporada deberia ser ${temporada}
         <Link className="link-tarjeta" to={`/${categoria}/${id}/info/:temporada`}>
         <div key={id} className="tarjeta">
             <div>

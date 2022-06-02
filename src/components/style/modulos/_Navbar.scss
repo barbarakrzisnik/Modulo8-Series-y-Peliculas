@@ -2,6 +2,7 @@
   background-color: black;
   ul {
     display: flex;
+    // no es necesario especificar row en flex
     flex-direction: row;
     align-items: center;
     padding: 10px;

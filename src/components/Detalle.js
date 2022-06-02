@@ -37,6 +37,7 @@ const Detalle = () => {
           ></img>
         </div>
         <div className="contenedor-detalle-contenido-texto">
+          {/* bien */}
           <h3>{datos.name ? datos.name : datos.title}</h3>
           <div className="texto-detalle-contenedor-puntuacion">
             <FaStar />

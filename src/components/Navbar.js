@@ -8,6 +8,9 @@ const Navbar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // los dos puntos antes de la variable sirven para router en las rutas, pero aqui estamos usando js
+    // este codigo hace que cuando envie la busqueda la url sea literalmente /busqueda/hulk/pagina/:numeroPagina
+    // en lugar de la pagina 1, 2, etc. Deberias poner ${numeroPagina} aqui
     navigate(`/busqueda/${valorDelInput}/pagina/:numeroPagina`);
   };
 
@@ -43,6 +46,7 @@ const Navbar = () => {
               <form onSubmit={handleSubmit}>
                 <div>
                   <label>
+                    {/* un label vacio es lo mismo que nada en terminos de accesibilidad */}
                     <input
                       className="navbar-input-texto"
                       type="text"

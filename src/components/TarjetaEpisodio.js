@@ -7,6 +7,7 @@ const TarjetaEpisodio = ({
   id,
 }) => {
   return (
+    // la key se usa solo dentro del Map, no se necesita aqui
     <div key={id} className="tarjeta-episodio">
       <div>
         <img className="imagen-tarjeta-episodio" src={imagen} alt="Captura de episodio"/>
