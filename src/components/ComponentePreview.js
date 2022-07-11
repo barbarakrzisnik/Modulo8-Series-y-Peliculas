@@ -10,6 +10,7 @@ const ComponentePreview = ({ array, titulo, categoria, valoracion }) => {
         className="link-detalle"
         to={`/${categoria}/${valoracion}/pagina/:numeroPagina`}
       >
+        {/* {titulo} alcanza en este caso */}
         {`${titulo}`}
         <FaArrowRight className="icono" />
       </Link>
